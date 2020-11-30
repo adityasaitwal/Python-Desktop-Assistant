@@ -10,7 +10,7 @@ import smtplib
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 # print(voices[0].id)
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[0].id)
 
 
 def speak(audio): 
@@ -84,7 +84,7 @@ if __name__ == "__main__":
         elif 'open stackoverflow' in query:
             webbrowser.open("stackoverflow.com")
 
-        elif 'pravin tarade' in query:
+        elif 'play music' in query:
             music_dir = "C:\\Users\\dell\\Music"
             songs = os.listdir(music_dir)
             print(songs)
@@ -112,14 +112,8 @@ if __name__ == "__main__":
         elif 'who are you' in query:
             speak("I am your personal desktop assistant jarvis") 
 
-        elif 'satish' in query:
-            speak("Satish Saitwal is a common man and hard working gentlemen who lives in jalgaon and works in New India Assurance Company Savda")
-
-        elif 'sandhya' in query:
-            speak("Sandhya Saitwal is a hard working housewife which do all household activities and cooks delicious meal for us everyday")  
-
         elif 'close jarvis' in query:
-            speak("Bye Sir,Have a good day and See you soon")
+            speak("OK Sir,Have a good day and See you soon")
             exit()
 
 
