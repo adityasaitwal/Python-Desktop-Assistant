@@ -74,12 +74,15 @@ if __name__ == "__main__":
             speak("According to Wikipedia")
             speak(results)
             print(results)
-
-        elif 'open youtube' in query:
-            webbrowser.open("youtube.com")
-
+            
         elif 'open google' in query:
             webbrowser.open("google.com")
+            
+        elif 'open youtube' in query:
+            webbrowser.open("youtube.com")
+        
+        elif 'open facebook' in query:
+            webbrowser.open("facebook.com")
 
         elif 'open stackoverflow' in query:
             webbrowser.open("stackoverflow.com")
